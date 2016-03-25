@@ -170,12 +170,12 @@ void ledFader7(long timePerStep, long timeAtColor){
       break;
     }
     
-    Serial.print("Target red: ");
-    Serial.println(targetRed);
-    Serial.print("Target blue: ");
-    Serial.println(targetBlue);
-    Serial.print("Target green: ");
-    Serial.println(targetGreen);
+    //Serial.print("Target red: ");
+    //Serial.println(targetRed);
+    //Serial.print("Target blue: ");
+    //Serial.println(targetBlue);
+    //Serial.print("Target green: ");
+    //Serial.println(targetGreen);
   }
   
   if(targetRed == currentRGB[0] && targetBlue == currentRGB[1] && targetGreen == currentRGB[2]){
