@@ -144,13 +144,14 @@ void ledFader7(long timePerStep, long timeAtColor){
   
   if(initializeFade == 0){
     nextFadeEvent = currentTime + timePerStep;
-    initializeFade = 1;
+    initializeFade = 1; 
     
-      //sum of targets = 510
+    //pick power for the channels
     float r1 = random(0,100);
     float r2 = random(0,100);
     float sum = r1 + r2;
-    int r3 = random (0, 3);  
+    //pick which channel to skip
+    int r3 = random (0, 3); 
     
     switch(r3){
       case(0):
@@ -169,7 +170,7 @@ void ledFader7(long timePerStep, long timeAtColor){
         targetGreen = max(min((r2/sum) * 510, 255), 50);
       break;
     }
-    
+
     //Serial.print("Target red: ");
     //Serial.println(targetRed);
     //Serial.print("Target blue: ");
